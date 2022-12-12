@@ -1,0 +1,10 @@
+
+Caron,Trevor,Austin,Texas,29872
+Chen,Ryan,Tampa,Florida,77531
+Cooper,Benjamin,Las,Vegas,Nevada,10181
+Daniels,Mary,Colombus,Ohio,19451
+Deer,Joe,NewYorkCity,NewYork,89233
+Martinez,Izzy,Detroit,Michigan,69517
+McGill,Jimmy,Fresno,California,25471
+Ronson,Rick,Anchorage,Alaska,00982
+White,Walter,Albuquerque,NewMexico,01381

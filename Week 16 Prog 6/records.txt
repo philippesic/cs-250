@@ -1,0 +1,10 @@
+Smith,Jack,SanFrancisco,California,64256
+McGill,Jimmy,Fresno,California,25471
+Deer,Joe,NewYorkCity,NewYork,89233
+Daniels,Mary,Colombus,Ohio,19451
+Ronson,Rick,Anchorage,Alaska,00982
+Cooper,Benjamin,Las,Vegas,Nevada,10181
+Chen,Ryan,Tampa,Florida,77531
+Caron,Trevor,Austin,Texas,29872
+White,Walter,Albuquerque,NewMexico,01381
+Martinez,Izzy,Detroit,Michigan,69517
