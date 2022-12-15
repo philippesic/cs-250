@@ -1,10 +1,3 @@
-//
-//  utils.h
-//  temp
-//
-//  Created by Pippo Pesic on 12/11/22.
-//
-
 #include <string>
 #include <iomanip>
 using namespace std;
@@ -18,9 +11,9 @@ using namespace std;
             
             int randomIndex = rand() % (lastIndex + 1);
             //swap
-            string temp = arr[lastIndex];
+            string tempSwapper = arr[lastIndex];
             arr[lastIndex] = arr[randomIndex];
-            arr[randomIndex] = temp;
+            arr[randomIndex] = tempSwapper;
         }
     }
     

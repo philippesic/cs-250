@@ -1,13 +1,3 @@
-//
-//  MemoryMatchGame.h
-//  Week 18 Final Project
-//
-//  Created by Pippo Pesic on 11/28/22.
-//
-
-#ifndef MemoryMatchGame_h
-#define MemoryMatchGame_h
-
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -18,6 +8,8 @@
 using namespace std;
 
 class MemoryMatchGame {
+    
+private:
     
     //Define Board Arrays
     Board board = *new Board();
@@ -54,6 +46,7 @@ public:
         }
     }
     
+    //Declare board size
     void setDifficultyLevel() {
         cout << "Enter difficulty level (4, 6, 8): ";
         cin >> difficultyLevel;
@@ -61,7 +54,8 @@ public:
             cout << endl << "Invalid difficulty level" << endl;
         }
     }
-    
+
+    //Declare time between guesses in seconds
     void setTimeDelay() {
         cout << endl << "Enter time in seconds between guesses (2, 4, 6): ";
         cin >> guessTime;
@@ -73,7 +67,7 @@ public:
         }
     }
     
-    
+    //Game loop of first and second guess and board reprint
     void gameLoop() {
         int guessedWordsCount = 0;
         int uniqueWordCount = difficultyLevel * difficultyLevel / 2;
@@ -94,6 +88,7 @@ public:
             cout <<  endl << "Enter row (0, 1, 2, 3...) ";
             cin >> rowGuess2;
             
+            //Check guesses with each other and assign to board element
             if (board.isMatch(rowGuess1, columnGuess1, rowGuess2, columnGuess2)){
                 guessedThemeWords[guessedWordsCount] = board.getElement(rowGuess1, columnGuess1);
                 guessedWordsCount++;
@@ -126,7 +121,3 @@ public:
     }
 
 };
-
-
-
-#endif /* MemoryMatchGame_h */

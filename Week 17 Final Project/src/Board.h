@@ -1,13 +1,3 @@
-//
-//  Board.h
-//  temp
-//
-//  Created by Pippo Pesic on 11/28/22.
-//
-
-#ifndef Board_h
-#define Board_h
-
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -19,6 +9,8 @@ using namespace std;
 
 class Board {
 
+private:
+    
     string boardData[8][8];
     string allThemeWords[50];
     
@@ -116,5 +108,3 @@ public:
         }
     }
 };
-
-#endif /* Board_h */

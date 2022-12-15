@@ -48,4 +48,3 @@ Eggplant
 Yam
 Celery
 Lettuce
-Celery
