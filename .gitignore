@@ -1,4 +1,7 @@
-.DS_Store
-**/.DS_Store
 .xcworkspacedata
 .xcuserstate
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?

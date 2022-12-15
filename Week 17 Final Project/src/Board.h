@@ -104,7 +104,7 @@ public:
             doubleSelectedThemeWords[i+uniqueWordCount] = selectedThemeWords[i];
         }
         
-        shuffleArray(doubleSelectedThemeWords, 16);
+        shuffleArrayInPlace(doubleSelectedThemeWords, 16);
         
         // assign words into board
         int i = 0;

@@ -9,15 +9,17 @@
 #include <iomanip>
 using namespace std;
 
-
     // Randomizes the order of words
-    void shuffleArray(string arr[], int size) {
+    void shuffleArrayInPlace(string arr[], int size) {
         srand(time(0));
         for(int i = 0; i < size; i++){
-            int randomIndex = rand() % size;
+            
+            int lastIndex = size - i - 1;
+            
+            int randomIndex = rand() % (lastIndex + 1);
             //swap
-            string temp = arr[i];
-            arr[i] = arr[randomIndex];
+            string temp = arr[lastIndex];
+            arr[lastIndex] = arr[randomIndex];
             arr[randomIndex] = temp;
         }
     }
