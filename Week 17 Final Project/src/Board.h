@@ -14,10 +14,11 @@
 #include <iomanip>
 #include <stdlib.h>
 #include <unistd.h>
+#include "utils.h"
 using namespace std;
 
 class Board {
-    
+
     string boardData[8][8];
     string allThemeWords[50];
     
@@ -25,28 +26,6 @@ public:
     
     int boardSize;
     string theme;
-    
-    // Randomizes the order of words
-    void shuffleArray(string arr[], int size) {
-        srand(time(0));
-        for(int i = 0; i < size; i++){
-            int randomIndex = rand() % size;
-            //swap
-            string temp = arr[i];
-            arr[i] = arr[randomIndex];
-            arr[randomIndex] = temp;
-        }
-    }
-    
-    // check if arr contains a value
-    bool contains(string arr[], int size, string val) {
-        for(int i = 0; i < size; i++){
-             if(arr[i] == val){
-                 return true;
-             }
-        }
-        return false;
-    }
     
     
     bool isMatch(int row1, int col1, int row2, int col2) {
@@ -62,13 +41,13 @@ public:
         string line;
 
         if (theme == "c") {
-            fin.open("/Users/pippo/Desktop/Week 18 Final Project/Cars.txt");
+            fin.open("/Users/pippo/github/cs-250/week 17 final project/themes/Cars.txt");
         }
         else if (theme == "e") {
-            fin.open("/Users/pippo/Desktop/Week 18 Final Project/Atoms.txt");
+            fin.open("/Users/pippo/github/cs-250/week 17 final project/themes/Atoms.txt");
         }
         else  if (theme == "f") {
-            fin.open("/Users/pippo/Desktop/Week 18 Final Project/Fruit.txt");
+            fin.open("/Users/pippo/github/cs-250/week 17 final project/themes/Fruits.txt");
         }
         
         int i = 0;
